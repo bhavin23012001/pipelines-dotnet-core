@@ -1,0 +1,11 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: a
+    jobs:
+      - job: a 
+          echo "job 1 called"
