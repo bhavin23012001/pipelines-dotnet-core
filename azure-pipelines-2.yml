@@ -11,6 +11,9 @@ stages:
   - stage: QA
     jobs:
       - job: QAJOB 
+  - stage: TEST1
+    jobs:
+      - job: TESTJOB1
   - stage: TEST
     jobs:
       - job: TESTJOB 
