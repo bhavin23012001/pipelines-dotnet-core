@@ -15,6 +15,7 @@ stages:
     jobs:
       - job: TESTJOB 
   - stage: PRODUCTION
+    dependsOn : QA
     jobs:
       - job: PRODUCTIONJOB 
         
