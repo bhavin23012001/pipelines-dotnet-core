@@ -15,7 +15,7 @@ stages:
     jobs:
       - job: TESTJOB 
   - stage: PRODUCTION
-    dependsOn : QA
+    dependsOn : []
     jobs:
       - job: PRODUCTIONJOB 
         
