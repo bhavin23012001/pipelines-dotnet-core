@@ -19,7 +19,7 @@ stages:
     jobs:
       - job: TESTJOB 
   - stage: PRODUCTION
-    
+    dependsOn : []
     jobs:
       - job: PRODUCTIONJOB 
         
