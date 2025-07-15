@@ -5,7 +5,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-  - stage: a
+  - stage: QA
     jobs:
-      - job: a 
-          echo "job 1 called"
+      - job: QAJOB 
+  - stage: TEST
+    jobs:
+      - job: TESTJOB 
+  - stage: PRODUCTION
+    jobs:
+      - job: PRODUCTIONJOB 
+        
