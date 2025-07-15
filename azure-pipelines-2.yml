@@ -12,13 +12,14 @@ stages:
     jobs:
       - job: QAJOB 
   - stage: TEST1
+    dependsOn : []
     jobs:
       - job: TESTJOB1
   - stage: TEST
     jobs:
       - job: TESTJOB 
   - stage: PRODUCTION
-    dependsOn : []
+    
     jobs:
       - job: PRODUCTIONJOB 
         
