@@ -16,6 +16,9 @@ stages:
     jobs:
       - job: TESTJOB1
   - stage: TEST
+    dependsOn : 
+    - TEST1
+    - PRODUCTION 
     jobs:
       - job: TESTJOB 
   - stage: PRODUCTION
